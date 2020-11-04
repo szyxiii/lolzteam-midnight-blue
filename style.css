@@ -49,7 +49,7 @@
 
 /* Nickname */
 #NavigationAccountUsername,
-.username[href^="szyxiii"], .username[href="members/3001711/"] {
+.username[href^="/*[[link1]]*/"], .username[href="/*[[link2]]*/"] {
     background: radial-gradient(#a310ff, #a200ff);
     background-clip: border-box;
     text-shadow: -1px -2px 1px rgb(255, 255, 255, .061), -1px -1px 1px rgba(255, 255, 255, .061), 1px 0px 7px rgb(0, 187, 255), 0px -2px 1px rgba(234, 46, 255, 0), 1px 0px 7px rgb(44, 255, 37), 0px -2px 1px rgb(255 255 255), 0px 1px 1px rgba(248, 0, 0, .21), -1px 3px 1px rgba(0, 17, 248, .33);
@@ -67,7 +67,7 @@ body {
 .tabs,
 #content,
 .xenOverlay > .sectionMain,
-.createThreadForm {
+.createThreadForm, .blockrow {
     background: var(--accent-dark2);
 }
 
@@ -212,22 +212,28 @@ a.crumb:before {
 }
 
 /* Buttons */
+.button,
 .button.primary,
 .profilePage .button,
 .changeUsernameUnit .button,
+.actionButton--sendMoney,
+.dottesStyle.buttonStyle,
 .button[href*="manage"],
 .button[href*="write"] {
     color: white;
-    background: var(--accent);
+    background-color: var(--accent);
     box-shadow: -1px -1px 1px rgb(255, 255, 255), 1px 0px 7px var(--accent);
 }
 
+.button:hover,
 .button.primary:hover,
 .profilePage .button:hover,
 .changeUsernameUnit .button:hover,
+.actionButton--sendMoney:hover,
+.dottesStyle.buttonStyle:hover,
 .button[href*="manage"]:hover,
 .button[href*="write"]:hover {
-    background: var(--accent-light);
+    background-color: var(--accent-light);
 }
 
 .button[href*='disable'],
@@ -250,6 +256,10 @@ a.SelectExcludedForumsLink:hover,
 a.cd-top.cd-is-visible
 {
     background-color: var(--accent-dark) !important;
+}
+
+.userContentLinks .button {
+    padding: 0px 10px;
 }
 
 /* Tabs */
@@ -338,7 +348,11 @@ div.primaryControls:before {
     border: none;
 }
 
-.simpleRedactor.MemberViewRedactor {
+.simpleRedactor.MemberViewRedactor,
+.memberCustomBackground .PanelScroller .panel,
+.memberCustomBackground .darkBackground,
+.memberCustomBackground .tabs,
+.memberCustomBackground .simpleRedactor.MemberViewRedactor, .memberCustomBackground .messageSimple, .memberCustomBackground .primaryContent {
     background: var(--accent-dark2);
 }
 
@@ -522,7 +536,12 @@ a.SelectExcludedForumsLink:hover {
 }
 
 .message .messageSimple .comment {
-    background: var(--accent-dark);
+    background: var(--accent-dark2);
+}
+
+.messageSimple .comment .commentContent .author {
+    color: white;
+    background: var(--accent);
 }
 
 /******************** Articles ********************/
