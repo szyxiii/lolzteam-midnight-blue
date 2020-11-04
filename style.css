@@ -144,7 +144,8 @@ option {
 .listItemText a,
 li:before,
 .fa-external-link-alt:before,
-.messageText a:not(.button):not(.username){
+.messageText a:not(.button):not(.username),
+.privateControls .item.control {
     color: var(--accent);
 }
 
