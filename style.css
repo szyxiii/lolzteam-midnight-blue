@@ -520,6 +520,10 @@ a.SelectExcludedForumsLink:hover {
     background: var(--accent-dark);
 }
 
+.message .messageSimple .comment {
+    background: var(--accent-dark);
+}
+
 /******************** Articles ********************/
 #articlesGrid, .articleImageBox {
     background: var(--accent-dark2);
