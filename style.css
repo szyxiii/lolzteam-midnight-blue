@@ -73,7 +73,8 @@ body {
 
 .xenOverlay .overlayScroll .sortable-placeholder,
 .heading,
-.xenOverlay .sectionMain .heading{
+.xenOverlay .sectionMain .heading,
+.xenOverlay .section .heading {
     background-color: var(--accent);
     box-shadow: 1px 0px 7px var(--accent);
 }
