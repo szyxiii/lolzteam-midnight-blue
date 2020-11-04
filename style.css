@@ -89,6 +89,10 @@ body {
     border: none;
 }
 
+.xenOverlay .section > .sectionFooter {
+    background: var(--accent-dark);
+}
+
 .primaryContent,
 .secondaryContent,
 .navigationSideBar > ul {
