@@ -421,6 +421,10 @@ div.primaryControls:before {
     background: var(--accent);
 }
 
+.bbCodeQuote:not(.noQuote) {
+    border-left: 5px solid var(--accent);
+}
+
 /* Warnings */
 .warningList > .dataTable tr.dataRow th {
     color: var(--accent-error);
