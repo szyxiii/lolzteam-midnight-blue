@@ -602,6 +602,10 @@ a.SelectExcludedForumsLink:hover {
     background: var(--accent);
 }
 
+.alertNotice {
+    background: var(--accent-dark2);
+}
+
 /******************** Articles ********************/
 #articlesGrid, .articleImageBox {
     background: var(--accent-dark2);
