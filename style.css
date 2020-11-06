@@ -100,6 +100,10 @@ body {
     background: var(--accent-dark);
 }
 
+.xenOverlay .formOverlay {
+    background: var(--accent-dark2);
+}
+
 .primaryContent,
 .secondaryContent,
 .navigationSideBar > ul {
