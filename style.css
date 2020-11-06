@@ -50,12 +50,17 @@
 
 /* Nickname */
 #NavigationAccountUsername,
-.username[href^="/*[[link1]]*/"], .username[href="/*[[link2]]*/"] {
+.username[href^="/*[[link1]]*/"],
+.username[href="/*[[link2]]*/"] {
     background: radial-gradient(#a310ff, #a200ff);
     background-clip: border-box;
     text-shadow: -1px -2px 1px rgb(255, 255, 255, .061), -1px -1px 1px rgba(255, 255, 255, .061), 1px 0px 7px rgb(0, 187, 255), 0px -2px 1px rgba(234, 46, 255, 0), 1px 0px 7px rgb(44, 255, 37), 0px -2px 1px rgb(255 255 255), 0px 1px 1px rgba(248, 0, 0, .21), -1px 3px 1px rgba(0, 17, 248, .33);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+#NavigationAccountUsername {
+    padding: 0px 8px;
 }
 
 /******************** General ********************/
@@ -126,6 +131,10 @@ body {
 
 #uaThreadViewContainer .footnote {
     border-top: 1px solid var(--accent-dark);
+}
+
+.log_out .pageContent {
+    display: flex;
 }
 
 /* Inputs */
@@ -237,6 +246,10 @@ a.crumb:before {
 }
 
 /* Buttons */
+.button:hover {
+    background: none !important;
+}
+
 .button,
 .button.primary,
 .profilePage .button,
@@ -273,6 +286,7 @@ a.crumb:before {
 }
 
 .button[href*='disable'],
+.button[href*='logout'],
 #ctrl_disassociate_vk_Disabler .button {
     color: white;
     background: var(--accent-error);
@@ -280,8 +294,9 @@ a.crumb:before {
 }
 
 .button[href*='disable']:hover,
-#ctrl_disassociate_vk_Disabler .button:not(.disabled):hover {
-    background: var(--accent-error-light);
+.button[href*='logout']:hover,
+#ctrl_disassociate_vk_Disabler .button:hover {
+    background-color: var(--accent-error-light) !important;
 }
 
 a.SelectExcludedForumsLink:hover,
@@ -296,6 +311,10 @@ a.cd-top.cd-is-visible
 
 .userContentLinks .button {
     padding: 0px 10px;
+}
+
+input.labelauty:not(:checked):not([disabled]) + label:hover {
+    background: var(--accent-error);
 }
 
 /* Tabs */
@@ -327,7 +346,7 @@ a.cd-top.cd-is-visible
 
 /* Logo */
 #lzt-logo {
-    filter: hue-rotate(var(--accent-hue));
+    background: url("https://i.imgur.com/H96TJZK.png");
 }
 
 .blockLinksList a:hover,
@@ -536,6 +555,11 @@ a.SelectExcludedForumsLink:hover {
     background-color: var(--accent-dark2) !important;
 }
 
+#completeChatbox .controls.reversedDirection {
+    background: var(--accent-dark2);
+    border-top: 1px solid var(--accent-dark);
+}
+
 /******************** Forums ********************/
 .titleBar h1,
 #pageDescription {
@@ -633,6 +657,14 @@ a.SelectExcludedForumsLink:hover {
 
 .CommentLoader {
     color: var(--accent);
+}
+
+html .redactor_toolbar li a:hover {
+    background: var(--accent-dark);
+}
+
+.needInNewArticles {
+    filter: hue-rotate(var(--accent-hue));
 }
 
 /******************** Articles ********************/
