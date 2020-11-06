@@ -50,8 +50,7 @@
 
 /* Nickname */
 #NavigationAccountUsername,
-.username[href^="/*[[link1]]*/"],
-.username[href="/*[[link2]]*/"] {
+.username[href^="/*[[link1]]*/"], .username[href="/*[[link2]]*/"] {
     background: radial-gradient(#a310ff, #a200ff);
     background-clip: border-box;
     text-shadow: -1px -2px 1px rgb(255, 255, 255, .061), -1px -1px 1px rgba(255, 255, 255, .061), 1px 0px 7px rgb(0, 187, 255), 0px -2px 1px rgba(234, 46, 255, 0), 1px 0px 7px rgb(44, 255, 37), 0px -2px 1px rgb(255 255 255), 0px 1px 1px rgba(248, 0, 0, .21), -1px 3px 1px rgba(0, 17, 248, .33);
@@ -315,6 +314,10 @@ a.cd-top.cd-is-visible
 
 input.labelauty:not(:checked):not([disabled]) + label:hover {
     background: var(--accent-error);
+}
+
+input.labelauty + label {
+    background: var(--accent-dark);
 }
 
 /* Tabs */
