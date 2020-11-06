@@ -23,12 +23,12 @@
 3. Обновить страницу форума
 
 ### Автоматическая установка
-1. Перейти по ссылке https://github.com/szyxiii/lolzteam-midnight-blue/blob/master/script.css
+1. Перейти по ссылке https://github.com/szyxiii/lolzteam-midnight-blue/blob/master/script.js
 2. Нажать на кнопку "Install" (Установить)
 3. Готово
 
 ### Ручная установка
-1. Открыть файл https://github.com/szyxiii/lolzteam-midnight-blue/blob/master/style.css в RAW формате или скачать и открыть любым текстовым редактором
+1. Открыть файл https://github.com/szyxiii/lolzteam-midnight-blue/blob/master/script.js в RAW формате или скачать и открыть любым текстовым редактором
 2. Скопировать всё содержимое файла в буфер обмена
 3. Перейти в меню расширения Tampermonkey и нажать на кнопку "Create new script" (Создать новый скрипт)
 4. Вставить в поле для кода всё скопированное содержимое и сохранить изменения (Ctrl+S)
