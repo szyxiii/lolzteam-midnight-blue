@@ -71,7 +71,7 @@ body {
 .createThreadForm, .blockrow,
 .tippy-popper .conversationTemplatesBox,
 .simpleRedactor--smiliesBox .smilieContainer,
-.QuickSearch .searchButton {
+.QuickSearch .searchButton, .likeNodes {
     background: var(--accent-dark2);
 }
 
@@ -171,7 +171,7 @@ a.OverlayTrigger.item.control.report {
     color: var(--accent) !important;
 }
 
-.numberStyle {
+.numberStyle, .likeNodes .node .counter {
     color: var(--accent);
     text-shadow: 1px 0px 7px rgb(0, 187, 255), 0px -2px 1px rgba(234, 46, 255, 0);
 }
@@ -200,11 +200,16 @@ a.crumb:before {
 
 /* Icons */
 .svgIcon--rub.green::before,
-.universalSearchForm::before {
+.universalSearchForm::before,
+#MarketBalanceSwitcher::before{
     filter: hue-rotate(var(--accent-hue));
 }
 
 .messageSimple a.like:hover .like2Icon {
+    filter: hue-rotate(var(--like-hue));
+}
+
+.messageSimple .item.unlike .like2Icon {
     filter: hue-rotate(var(--like-hue));
 }
 
@@ -307,6 +312,10 @@ a.cd-top.cd-is-visible
     background-color: var(--accent-dark2);
 }
 
+#Captcha img {
+    filter: contrast(150%) invert(20%);
+}
+
 /******************** Navbar ********************/
 #header {
     background: var(--accent-dark2);
@@ -335,6 +344,10 @@ div.primaryControls:before {
 .navTabs .navTab.PopupClosed .navLink:hover .counter-container img,
 .navTabs .navTab.PopupOpen .navLink .counter-container img {
     filter: hue-rotate(var(--accent-hue));
+}
+
+.navTabs .navTab.PopupOpen .navLink {
+    background: var(--accent-dark);
 }
 
 .navigation-header {
@@ -440,6 +453,10 @@ div.primaryControls:before {
 
 .loginPasswordConfirmForm > .button {
     margin-left: 10px;
+}
+
+.userIsBanned-notice {
+    background: var(--accent-dark);
 }
 
 /******************** Main page ********************/
@@ -604,6 +621,10 @@ a.SelectExcludedForumsLink:hover {
 
 .alertNotice {
     background: var(--accent-dark2);
+}
+
+.CommentLoader {
+    color: var(--accent);
 }
 
 /******************** Articles ********************/
