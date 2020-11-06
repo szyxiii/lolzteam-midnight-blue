@@ -37,6 +37,7 @@
 
     --accent: rgba(0, 162, 255, 1);
     --accent-light: rgba(62, 184, 255, 1);
+    --accent-transparent: rgba(62, 184, 255, .2);
 
     --accent-dark: #191d24;
     --accent-dark2: #101317;
@@ -50,7 +51,7 @@
 
 /* Nickname */
 #NavigationAccountUsername,
-.username[href^="/*[[link1]]*/"], .username[href="/*[[link2]]*/"] {
+.username[href^="szyxiii"], .username[href="members/3001711/"] {
     background: radial-gradient(#a310ff, #a200ff);
     background-clip: border-box;
     text-shadow: -1px -2px 1px rgb(255, 255, 255, .061), -1px -1px 1px rgba(255, 255, 255, .061), 1px 0px 7px rgb(0, 187, 255), 0px -2px 1px rgba(234, 46, 255, 0), 1px 0px 7px rgb(44, 255, 37), 0px -2px 1px rgb(255 255 255), 0px 1px 1px rgba(248, 0, 0, .21), -1px 3px 1px rgba(0, 17, 248, .33);
@@ -213,7 +214,7 @@ a.crumb:before {
 /* Icons */
 .svgIcon--rub.green::before,
 .universalSearchForm::before,
-#MarketBalanceSwitcher::before{
+#MarketBalanceSwitcher::before {
     filter: hue-rotate(var(--accent-hue));
 }
 
@@ -242,6 +243,10 @@ a.crumb:before {
 .iconKey.fa.fa-lock.Tooltip,
 .titleBarIcon.closedIcon {
     color: var(--accent-error);
+}
+
+.message .selectedIcon {
+    background-color: var(--accent);
 }
 
 /* Buttons */
@@ -390,8 +395,7 @@ div.primaryControls:before {
     background: var(--accent-dark);
 }
 
-#AlertsMenu_Counter,
-#ConversationsMenu_Counter {
+#AlertsMenu_Counter, #ConversationsMenu_Counter {
     filter: none;
     border: none;
     background: var(--accent);
@@ -409,6 +413,45 @@ div.primaryControls:before {
 
 #AccountMenu > a:hover {
     background: var(--accent-dark);
+}
+
+/******************** Dialogs ********************/
+.ImDialogHeader .membersAndActions,
+.conversationMessages,
+.conversationItem,
+.scroll-wrapper > .scroll-content,
+.conversationList--bottomBar,
+.simpleRedactor {
+    background: var(--accent-dark);
+}
+
+.message.unread .messageWrapper {
+    background: var(--accent-dark2);
+}
+
+.conversationItem:hover {
+    background: var(--accent-dark2);
+}
+
+.conversationItem.active {
+    background: var(--accent-transparent);
+}
+
+.conversationList .universalSearchForm,
+.ImDialogHeader .membersAndActions,
+.conversationList--bottomBar,
+.conversationList,
+.conversationContainer,
+.ImDialogHeader {
+    border: none;
+}
+
+.conversationList--bottomBar {
+    border-top: 1px solid transparent;
+}
+
+.soundNotification:hover {
+    background: var(--accent-dark2);
 }
 
 /******************** Profile ********************/
