@@ -254,7 +254,7 @@ a.crumb:before {
 .dottesStyle.buttonStyle:hover,
 .button[href*="manage"]:hover,
 .button[href*="write"]:hover {
-    background-color: var(--accent-light);
+    background-color: var(--accent-light) !important;
 }
 
 .button:focus,
@@ -480,6 +480,10 @@ a.SelectExcludedForumsLink:hover {
 
 .nodeList .node.current > .nodeInfo > .nodeText > .nodeTitle > a:before {
     filter: hue-rotate(var(--accent-hue));
+}
+
+.node h3.nodeTitle > a:hover {
+    background: var(--accent-dark3);
 }
 
 .monthMaecenas .donationAmount {
