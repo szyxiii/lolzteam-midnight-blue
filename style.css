@@ -390,7 +390,8 @@ div.primaryControls:before {
     background: var(--accent-dark);
 }
 
-#AlertsMenu_Counter {
+#AlertsMenu_Counter,
+#ConversationsMenu_Counter {
     filter: none;
     border: none;
     background: var(--accent);
